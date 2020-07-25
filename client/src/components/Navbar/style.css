@@ -1,0 +1,17 @@
+nav {
+    text-align: center;
+}
+
+.navlink {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color: ivory
+}
+
+.links {
+    margin: 0px;
+    width: 400px
+}
