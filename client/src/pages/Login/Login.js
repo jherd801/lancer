@@ -1,10 +1,13 @@
 import React from "react";
+import SignUp from "../../components/SignUp/SignUp";
+import Reviews from "../../components/Reviews/Reviews"
 
 const Login = () => (
-  <div>
-    <h1>
-      Login Page 
-    </h1>    
+  <div className="container">
+    <SignUp />
+    <aside>
+      <Reviews />
+    </aside>
   </div>
 );
 

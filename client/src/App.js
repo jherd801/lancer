@@ -7,6 +7,9 @@ import Listings from "./pages/Listings/Listings"
 import Login from "./pages/Login/Login"
 import MyListings from "./pages/MyListings/MyListings"
 import NewListing from "./pages/NewListing/NewListing"
+import About from "./pages/About/About"
+import Contact from "./pages/Contact/Contact"
+
 import Navbar from "./components/Navbar/Navbar"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
@@ -21,7 +24,6 @@ function App() {
           <Header />
           <Navbar />
         </div>
-      </div>
       <div>
         <Route exact path="/" component={Home} />
         <Route exact path="/buysell" component={BuySell} />
@@ -29,9 +31,12 @@ function App() {
         <Route exact path="/login" component={Login} />
         <Route exact path="/mylistings" component={MyListings} />
         <Route exact path="/newlisting" component={NewListing} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
       </div>
       <div>
         <Footer />
+      </div>
       </div>
     </Router>
 
