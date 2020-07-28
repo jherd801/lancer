@@ -1,11 +1,11 @@
 import React from "react";
 
-const BuySell = () => (
+const About = () => (
   <div>
     <h1>
-      Buy Sell Page
+      About Page
     </h1>    
   </div>
 );
 
-export default BuySell;
+export default About;

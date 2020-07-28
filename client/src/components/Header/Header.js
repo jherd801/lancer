@@ -4,7 +4,14 @@ import './style.css';
 
 function Header() {
     return (
-        <h1>Lancer</h1>
+        <div className="container-fluid">
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container1">
+            <h1 className="display-4">Lancer</h1>
+            <p className="lead">Some really awesome tag line here</p>
+          </div>
+        </div>
+      </div>
     )
 }
 
