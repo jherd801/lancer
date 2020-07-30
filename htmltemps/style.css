@@ -85,6 +85,21 @@ form {
     margin-top: 50px;
 }
 
+/* css search page start*/
+/*nav bar css */
+
+.nav {
+    background-color: #19709c;
+}
+
+.hrefs {
+    color: #ffff;
+}
+
+.hrefs, :hover {
+    color: lightgray;
+}
+
 #footer {
     background-color: #19709c;
     position: absolute;
