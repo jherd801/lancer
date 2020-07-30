@@ -1,10 +1,9 @@
 import React from "react";
+import ListingForm from "../../components/New Listing/index";
 
 const NewListing = () => (
   <div>
-    <h1>
-      New Listing Page 
-    </h1>    
+    <ListingForm />
   </div>
 );
 
