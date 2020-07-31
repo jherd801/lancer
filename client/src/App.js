@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./pages/Home/Home"
+import Dashboard from "./pages/Dashboard/index"
 import BuySell from "./pages/BuySell/BuySell"
 import Listings from "./pages/Listings/Listings"
 import Login from "./pages/Login/Login"
@@ -25,7 +25,7 @@ function App() {
           <Navbar />
         </div>
       <div>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Dashboard} />
         <Route exact path="/buysell" component={BuySell} />
         <Route exact path="/listings" component={Listings} />
         <Route exact path="/login" component={Login} />
