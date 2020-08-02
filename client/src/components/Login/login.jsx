@@ -1,17 +1,4 @@
-// import React from "react";
-// import Login from "../../components/Login"
-
-// const Login = () => (
-//   <div className="container">
-
-//   </div>
-// );
-
-// export default Login;
-
-
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
 
 class Login extends Component {
   // Setting the component's initial state
@@ -57,7 +44,7 @@ class Login extends Component {
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-      <div className="jumbotron">
+      <div>
         <p>
           Please enter your email and password to sign in
         </p>
@@ -76,13 +63,7 @@ class Login extends Component {
             type="password"
             placeholder="Password"
           />
-          <p>
-            (Don't have an account? Click the sign up button below to create a free account)
-          </p>
           <button onClick={this.handleFormSubmit}>Submit</button>
-          <button>
-            <Link to="/signup">Sign Up</Link>
-          </button>
         </form>
       </div>
     );
@@ -90,4 +71,3 @@ class Login extends Component {
 }
 
 export default Login
-
