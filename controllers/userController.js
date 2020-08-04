@@ -9,6 +9,14 @@ module.exports = {
             .catch(err => res.status(422).json(err))
     },
 
+    // function to find a specific user by their ID
+    findById: function(req, res) {
+        db.User
+          .findById(req.params.id)
+          .then(dbModel => res.json(dbModel))
+          .catch(err => res.status(422).json(err));
+      },
+
     // update function for changing user
     update: function(req, res) {
         db.User
