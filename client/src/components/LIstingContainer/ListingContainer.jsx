@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ListingData from '../../../../scripts/seedPosts';
+import ListingData from '../../utils/listings.json';
 import ListingCard from '../ListingCard/index';
 
 function ListingContainer() {
@@ -8,15 +8,14 @@ function ListingContainer() {
 
     return (
         <div>
-            <h2>A few examples of past projects</h2>
             <div>
-                {projects.map(project => (
+                {listings.map(listing => (
                     <ListingCard
-                        key={project.id}
-                        title={project.title}
-                        description={project.description}
-                        price={project.price}
-                        category={project.category}
+                        key={listing.id}
+                        title={listing.title}
+                        description={listing.description}
+                        price={listing.price}
+                        category={listing.category}
                     />
                 ))}
             </div>
