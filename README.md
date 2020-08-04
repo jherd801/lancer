@@ -1,6 +1,6 @@
 # lancer
 
-A portfolio site to showcase my work both as a health and safety professional, and as a web developer in training. 
+A user posting application for anyone with a skill to market that for hire... 
 
 <img src="" alt="Project Screenshot" max-height="400px">
 
@@ -36,9 +36,8 @@ No applicable tests
 
 * [React](https://reactjs.org/) - Javascript library used to build front end user interface
 * [Bootstrap](https://getbootstrap.com/) - CSS styling framework
-* [MongoDB]
-* [Mongoose]
-* []
+* [MongoDB](https://www.mongodb.com/) - No-SQL database
+* [Mongoose](https://mongoosejs.com/docs/) - Object Data Modeling library
 
 ## How to Use
 
