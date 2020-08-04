@@ -8,39 +8,39 @@ mongoose.connect(
 
 const postsSeed = [
     {
-        title: "",
-        description: "",
-        price: "",
-        category: ""
+        title: "Carpet Installer",
+        description: "Laying carpet",
+        price: "$15.00 per square ft",
+        category: "Trade Skill"
     },
     {
-        title: "",
-        description: "",
-        price: "",
-        category: ""
+        title: "Hardwood Installer",
+        description: "Professional hardwood installation",
+        price: "Price varies per job",
+        category: "Trade Skill"
     },
     {
-        title: "",
-        description: "",
-        price: "",
-        category: ""
+        title: "Plumber",
+        description: "Plumbing installation",
+        price: "Price varries per job",
+        category: "Trade Skill"
     },
     {
-        title: "",
-        description: "",
-        price: "",
-        category: ""
+        title: "Guitar Lessons",
+        description: "Learn electric and accoustic guitar",
+        price: "$50.00 per hour",
+        category: "Musical instrument"
     },
     {
-        title: "",
-        description: "",
-        price: "",
-        category: ""
+        title: "Pool cleaning",
+        description: "professionally clean your pool",
+        price: "$100.00 per cleaning",
+        category: "Maintanance"
     },
     {
-        title: "",
-        description: "",
-        price: "",
-        category: ""
+        title: "Professional CPA",
+        description: "Help filing your taxes",
+        price: "$200.00 to file your taxes",
+        category: "Accounting"
     }
 ]
