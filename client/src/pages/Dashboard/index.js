@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileCard from "../../components/ProfileCard/index";
+import MyListing from "../../components/"
 
 const Dashboard = () => (
   <div className="row">
@@ -7,6 +8,7 @@ const Dashboard = () => (
       <ProfileCard />
     </div>
     <div className="col-xl-8">
+      <MyListing />
     </div>
   </div>
 );
