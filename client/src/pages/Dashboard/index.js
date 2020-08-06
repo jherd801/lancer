@@ -1,6 +1,9 @@
 import React from "react";
 import ProfileCard from "../../components/ProfileCard/index";
-import MyListing from "../../components/"
+//import MyListing from "../../components/MyListing/index"
+import ListingContainer from '../../components/ListingContainer/index'
+import './style.css'
+
 
 const Dashboard = () => (
   <div className="row">
@@ -8,7 +11,7 @@ const Dashboard = () => (
       <ProfileCard />
     </div>
     <div className="col-xl-8">
-      <MyListing />
+      <ListingContainer />
     </div>
   </div>
 );
