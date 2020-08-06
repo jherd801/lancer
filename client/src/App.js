@@ -9,7 +9,6 @@ import About from "./pages/About/About"
 import Contact from "./pages/Contact/Contact"
 import SignUp from "./pages/SignUp/index"
 
-import Navbar from "./components/Navbar/Navbar"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 
@@ -21,7 +20,6 @@ function App() {
       <div className="App">
         <div>
           <Header />
-          <Navbar />
         </div>
       <div>
         <Route exact path="/" component={Login} />

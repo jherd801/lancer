@@ -12,6 +12,8 @@
 
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+import './style.css'
+
 
 class Login extends Component {
   // Setting the component's initial state
