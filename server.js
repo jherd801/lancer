@@ -40,6 +40,8 @@ if (process.env.NODE_ENV === "production") {
 
 // use routes (API may still need. Not sure on react.) => heroku
 
+app.use(routes);
+
 // connnects to mongo databse
     // may need to change route based on front end
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lancerServices");
