@@ -8,14 +8,17 @@ import './style.css'
 
 
 const Dashboard = () => (
+  <div className='container'>
+
+  <Navbar />
   <div className="row">
-    <Navbar />
-    <div className="col-xl-8">
+    <div className="col-xl-6">
       <ProfileCard />
     </div>
-    <div className="col-xl-8">
+    <div className="col-xl-6">
       <ListingContainer />
     </div>
+  </div>
   </div>
 );
 
