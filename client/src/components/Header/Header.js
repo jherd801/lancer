@@ -8,7 +8,7 @@ function Header() {
         <div className="jumbotron jumbotron-fluid">
           <div className="container1">
             <h1 className="display-4">Lancer</h1>
-            <p className="lead">Some really awesome tag line here</p>
+            <p className="lead">Find your Freelancer to get your job done</p>
           </div>
         </div>
       </div>

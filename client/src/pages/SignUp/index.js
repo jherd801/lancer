@@ -1,12 +1,13 @@
 import React from "react";
 import SignUp from "../../components/SignUp/index"
+import './style.css'
 
 const CreateProfile = () => (
-  <div className="row">
-    <div className="col-xl-8">
+  
+    <div className="formAlign">
       <SignUp />
     </div>
-  </div>
+  
 );
 
 export default CreateProfile;

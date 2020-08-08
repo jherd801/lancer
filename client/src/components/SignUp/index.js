@@ -110,7 +110,7 @@ class SignUp extends Component {
             placeholder="Zip Code"
           />
           <MyDropzone />
-          <button onClick={this.handleFormSubmit}>Submit</button>
+          <button className="btn btn-primary m-3" onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>
     );
