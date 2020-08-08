@@ -1,4 +1,4 @@
-const db = require("../models/services");
+const db = require("../models");
 
 module.exports = {
     // find all method to retrieve all services

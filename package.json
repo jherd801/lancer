@@ -24,7 +24,8 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "seed": "node scripts/seedUsers.js && node scripts/seedPosts.js"
   },
   "repository": {
     "type": "git",
