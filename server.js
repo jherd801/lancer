@@ -47,4 +47,4 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lancerServices"
 // API server starts listening
 app.listen(PORT, function() {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-  });
+});

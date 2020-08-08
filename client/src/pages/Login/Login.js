@@ -81,8 +81,8 @@ class Login extends Component {
           <p>
             (Don't have an account? Click the sign up button below to create a free account)
           </p>
-          <button onClick={this.handleFormSubmit}>Submit</button>
-          <button>
+          <button className="btn btn-primary m-3" onClick={this.handleFormSubmit}>Submit</button>
+          <button className='btn btn-primary m-3'>
             <Link to="/signup">Sign Up</Link>
           </button>
         </form>

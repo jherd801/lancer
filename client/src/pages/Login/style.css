@@ -1,3 +1,9 @@
 form {
     text-align: center;
+    display: inline-block;
+    
+}
+
+button {
+    background-color: aqua;
 }
