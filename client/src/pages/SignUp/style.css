@@ -1,7 +1,6 @@
-form {
+#formAlign {
     text-align: center;
     display: inline-block;
-    margin-left: 300px;
+    margin: 0px;
     
 }
-
