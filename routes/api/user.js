@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const userController = require("");
+const { User } = require("../../controllers");
 
 // routes to user page
 // **** NOT SURE IF THERE SHOULD BE A USERS PAGE WITH ALL USERS ****
@@ -10,11 +10,12 @@ const userController = require("");
 
 
 
-// routes 
+// routes
+// => /api/user/:id
 router
     .route("/:id")
-    .get(userController.findById)
-    .put(userController.update)
-    .delete(userController.remove)
+    .get(User.findById)
+    .put(User.update)
+    .delete(User.remove)
 
 module.exports = router;

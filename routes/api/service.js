@@ -1,16 +1,18 @@
 const router = require("express").Router();
-const serviceController = require("../../controllers/serviceController");
+const { Service } = require("../../controllers");
 
+// => /api/service/lancerServices
 router.route("/lancerServices")
 // 'lancerServices' -or- 'services'
-    .get(serviceController.findAll())
-    .post(serviceController.create);
+    .get(Service.findAll)
+    .post(Service.create);
 
 // finds specific service by ID and allows for updates and deletions
+// => /api/service/:id
 router
     .route("/:id")
-    .get(serviceController.findById)
-    .put(serviceController.update)
-    .delete(serviceController.remove);
+    .get(Service.findById)
+    .put(Service.update)
+    .delete(Service.remove);
   
-  module.exports = router;
+module.exports = router;

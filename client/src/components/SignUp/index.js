@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MyDropzone from "../../components/Dropzone/index"
+import MyDropzone from "../../components/Dropzone/index";
 
 class SignUp extends Component {
   // Setting the component's initial state

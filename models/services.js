@@ -2,10 +2,23 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const servicesSchema = new Schema ({
-    title: {type: String, required: true},
+    title: {
+        type: String, 
+        required: true
+    },
     // "lancer" (seller) -> pull from user db?
-    date: { type: Date, default: Date.now },
-    description: { type: String, required: true }
+    date: { 
+        type: Date, 
+        default: Date.now 
+    },
+    description: { 
+        type: String, 
+        required: true
+     },
+    price: { 
+        type: Number, 
+        required: false
+    }
 });
 
 const Service = mongoose.model("service", servicesSchema);
