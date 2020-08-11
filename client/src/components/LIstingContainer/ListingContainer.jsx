@@ -22,8 +22,10 @@ function ListingContainer() {
                     <ListingCard
                         key={listing._id}
                         title={listing.title}
+                        name={listing.name}
                         description={listing.description}
                         price={listing.price}
+                        image={listing.image}
                     />
                 ))}
             </div>

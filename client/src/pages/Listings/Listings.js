@@ -6,9 +6,7 @@ import ListingContainer from "../../components/ListingContainer";
 const Listings = () => (
   <div>
     <Navbar />
-    <h1>
-      Listings Page 
-    </h1>    
+   
     <ListingContainer />
   </div>
 );
