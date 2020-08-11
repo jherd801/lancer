@@ -8,7 +8,7 @@ function Reviews() {
             </div>
             <div>
                 <div className="review2">
-                    <p className="review">some awesome review here</p>
+                    <p className="review">Some awesome review here</p>
                 </div>
             </div>
             <div>
