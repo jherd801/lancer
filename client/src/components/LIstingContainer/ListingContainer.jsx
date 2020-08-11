@@ -1,11 +1,17 @@
 import React from 'react';
 
-import ListingData from '../../utils/listings.json';
 import ListingCard from '../ListingCard/index';
 import API from '../../utils/API'
+import { response } from 'express';
 
 function ListingContainer() {
-    const listings = ListingData
+    
+    API.getPosts()
+    .then((response) => {
+        console.log(response)
+    });
+    
+    const listings = response
 
     return (
         <div>
