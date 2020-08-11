@@ -2,21 +2,21 @@
         "development": {
         "username": "root",
         "password": null,
-        "database": "",
+        "database": "dancerdb",
         "host": "127.0.0.1",
         "dialect": "mongoose"
         },
         "test": {
         "username": "root",
         "password": null,
-        "database": "",
+        "database": "lancerdb",
         "host": "127.0.0.1",
         "dialect": "mongoose"
         },
         "production": {
         "username": "root",
         "password": null,
-        "database": "",
+        "database": "lancerdb",
         "host": "127.0.0.1",
         "dialect": "mongoose"
         }
