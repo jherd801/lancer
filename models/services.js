@@ -16,8 +16,16 @@ const servicesSchema = new Schema ({
         required: true
      },
     price: { 
-        type: Number, 
+        type: String, 
         required: false
+    },
+    image: {
+        type: String,
+        required: false
+    },
+    name: {
+        type: String,
+        required: true
     }
 });
 
