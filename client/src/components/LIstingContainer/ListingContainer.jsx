@@ -1,28 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import ListingCard from '../ListingCard/index';
 import API from '../../utils/API'
-import { response } from 'express';
 
 function ListingContainer() {
     
-    API.getPosts()
-    .then((response) => {
-        console.log(response)
-    });
-    
-    const listings = response
+    let [listings, setListings] = useState([]);
+
+    useEffect(() => {
+        API.getPosts()
+          .then(res => {
+            console.log(res.data)
+            setListings(res.data)
+        });      
+    }, []);
 
     return (
         <div>
             <div>
                 {listings.map(listing => (
                     <ListingCard
-                        key={listing.id}
+                        key={listing._id}
                         title={listing.title}
                         description={listing.description}
                         price={listing.price}
-                        category={listing.category}
                     />
                 ))}
             </div>
