@@ -2,6 +2,7 @@ import React from 'react';
 
 import ListingData from '../../utils/listings.json';
 import ListingCard from '../ListingCard/index';
+import API from '../../utils/API'
 
 function ListingContainer() {
     const listings = ListingData

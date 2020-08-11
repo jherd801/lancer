@@ -3,7 +3,7 @@ const db = require("../models");
 
 mongoose.connect(
     process.env.MONGODB_URI ||
-    "mongodb://localhost/lancerUsers"
+    "mongodb://localhost/lancerDB"
 );
 
 const usersSeed = [
@@ -12,8 +12,6 @@ const usersSeed = [
         lastName: "Scott",
         email: "michael@email.com",
         password: "password",
-        city: "Scranton",
-        state: "Pennsylvania",
         zipcode: "18503"
     },
     {
@@ -21,8 +19,6 @@ const usersSeed = [
         lastName: "Smith",
         email: "Johnsmith@hotmail.com",
         password: "joeshmoe",
-        city: "magna",
-        state: "Utah",
         zipcode: "84128"
     },
     {
@@ -30,8 +26,6 @@ const usersSeed = [
         lastName: "Jones",
         email: "Sunshine1421@gmail.com",
         password: "Flowers",
-        city: "Austin",
-        state: "Texas",
         zipcode: "78653"
     },
     {
@@ -39,8 +33,6 @@ const usersSeed = [
         lastName: "Crockett",
         email: "Furryhat33@hotmail.com",
         password: "Bears1433",
-        city: "Atlanta",
-        state: "Georgia",
         zipcode: "30309"
     },
     {
@@ -48,8 +40,6 @@ const usersSeed = [
         lastName: "smitchell",
         email: "Brismitch@hotmail.com",
         password: "!momaBear33",
-        city: "San Francisco",
-        state: "California",
         zipcode: "94105"
     },
     {
@@ -57,8 +47,6 @@ const usersSeed = [
         lastName: "Hindell",
         email: "HindySmiles14@gmail.com",
         password: "14@putts",
-        city: "Denver",
-        state: "Colorado",
         zipcode: "80123"
     },
     {
@@ -66,8 +54,18 @@ const usersSeed = [
         lastName: "Smalls",
         email: "Notorious33@gmail.com",
         password: "MakinMoney14",
-        city: "Bronx",
-        state: "New York",
         zipcode: "10467"
     }
-]
+];
+
+db.User
+  .remove({})
+  .then(() => db.User.collection.insertMany(usersSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
