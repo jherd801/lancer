@@ -28,6 +28,6 @@ const usersSchema = new Schema({
     // location ? (what type and how would we get it)
 });
 
-const User = mongoose.model("User", usersSchema);
+const User = mongoose.model("user", usersSchema);
 
 module.exports = User;
