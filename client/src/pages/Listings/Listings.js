@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from '../../components/Navbar/Navbar'
 
-import ListingContainer from "../../components/ListingContainer";
+import ListingContainer from "../../components/ListingContainer/ListingContainer";
 
 const Listings = () => (
   <div>
