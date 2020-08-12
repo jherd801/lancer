@@ -10,25 +10,22 @@ function ListingContainer() {
     useEffect(() => {
         API.getPosts()
           .then(res => {
-            console.log(res.data)
             setListings(res.data)
         });      
     }, []);
 
     return (
         <div>
-            <div>
-                {listings.map(listing => (
-                    <ListingCard
-                        key={listing._id}
-                        title={listing.title}
-                        name={listing.name}
-                        description={listing.description}
-                        price={listing.price}
-                        image={listing.image}
-                    />
-                ))}
-            </div>
+            {listings.map(listing => (
+                <ListingCard
+                    key={listing._id}
+                    title={listing.title}
+                    name={listing.name}
+                    description={listing.description}
+                    price={listing.price}
+                    image={listing.image}
+                />
+            ))}
         </div>
     )
 }
