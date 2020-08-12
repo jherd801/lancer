@@ -1,14 +1,19 @@
 import React from 'react';
+import './style.css'
 
 function ListingCard({ title, description, price, image, name }) {
     return (
         <div>
-            <div>
-                    <h3>{title}</h3>
-                    <h2>{name}</h2>
-                    <p><img src={image} alt="Listing"/></p>
+            <div className="container">
+                    <div className="col col-lg-4">
+                        <img src={image} alt="Listing"/>
+                    </div>
+                    <div className="col col-lg-8">
+                        <h2>{title}</h2>
+                        <h3>{name}</h3>
+                        <p>{price}</p>
+                    </div>
                     <p>{description}</p>
-                    <p>{price}</p>
             </div>
         </div>
     )
