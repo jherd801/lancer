@@ -56,7 +56,7 @@ class ListingForm extends Component {
               </div>
             <div className="card-body">
               <div className="form-group">
-                <label htmlFor="formGroupExampleInput">Name of Listing</label>
+                <label htmlFor="formGroupExampleInput">Listing Title</label>
                 <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Job listing name"></input>
 
                 <label htmlFor="formGroupExampleInput">Job Information</label>
