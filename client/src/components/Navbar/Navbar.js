@@ -11,7 +11,7 @@ function Navbar() {
             <span className="navbar-brand mb-0 h1 text-dark navlink"><Link to="/newlisting">New Listing</Link></span>
             <span className="navbar-brand mb-0 h1 text-dark navlink"><Link to="/about">About</Link></span>
             <span className="navbar-brand mb-0 h1 text-dark navlink"><Link to="/contact">Contact</Link></span>
-            <span className="navbar-brand mb-0 h1 text-dark navlink"><Link to="/signup">Sign Up</Link></span>
+            <span className="navbar-brand mb-0 h1 text-dark navlink"><Link to="/signup">Logout</Link></span>
         </nav>
     )
 }
