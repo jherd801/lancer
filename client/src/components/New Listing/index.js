@@ -56,13 +56,13 @@ class ListingForm extends Component {
               </div>
             <div className="card-body">
               <div className="form-group">
-                <label for="formGroupExampleInput">Name of Listing</label>
+                <label htmlFor="formGroupExampleInput">Name of Listing</label>
                 <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Job listing name"></input>
 
-                <label for="formGroupExampleInput">Job Information</label>
+                <label htmlFor="formGroupExampleInput">Job Information</label>
                 <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Installation cost,  per hour cost"></input>
 
-                <label for="exampleFormControlTextarea1">Job Description</label>
+                <label htmlFor="exampleFormControlTextarea1">Job Description</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 <button type="button" className="btn btn-primary">Submit</button>
               </div>
@@ -80,7 +80,7 @@ class ListingForm extends Component {
               <div className="input-group">
                 <div className="custom-file">
                   <input type="file" className="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"></input>
-                  <label className="custom-file-label" for="inputGroupFile04">Choose file</label>
+                  <label className="custom-file-label" htmlFor="inputGroupFile04">Choose file</label>
                 </div>
               </div>
               <div>
