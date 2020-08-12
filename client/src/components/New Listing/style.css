@@ -1,5 +1,19 @@
+.container-fluid {
+  text-align: left;
+}
+
 .form {
-    margin: 20px;
+    margin: 40px;
+    
+    text-align: left;
+  }
+  
+  .card-right {
+  padding: 0%;
+  }
+
+  .card-header {
+    font-weight: bold;
   }
   
   .form input {
@@ -9,3 +23,6 @@
     width: 100%;
   }
   
+  button {
+    margin-top: 20px;
+  }
