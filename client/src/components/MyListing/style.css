@@ -1,0 +1,8 @@
+.profileCard {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: black;
+    border-style: solid;
+    margin: 15px;
+    height: 400px
+}

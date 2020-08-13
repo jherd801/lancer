@@ -1,17 +1,10 @@
 import React from 'react';
+import './style.css'
 
 function MyListing() {
     return (
-        <div className="Container">
-            <div>
-                <p>Name: John Does</p>
-            </div>
-            <div>
-                <p>Location: Anywhere, USA</p>
-            </div>
-            <div>
-                <p>Email: John.Doe@email.com</p>
-            </div>
+        <div className="profileCard">
+            <h1>My Favorite Listings</h1>
         </div>
     )
 }

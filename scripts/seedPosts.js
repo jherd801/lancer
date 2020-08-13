@@ -8,9 +8,9 @@ mongoose.connect(
 
 const postsSeed = [
     {
-        title: "Carpet Installer",
-        name: "Bill Floorsby",
-        description: "Laying carpet",
+        title: "Piano Lessons",
+        name: "Bill Ivory",
+        description: "Ever tried the piano? It's hard as can be. Let me help you get started with some introductory lessons.",
         price: "$15 / square ft",
         image: "https://images.unsplash.com/photo-1583356766567-edb20320d8a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
     },
