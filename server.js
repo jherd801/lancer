@@ -55,7 +55,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 if (process.env.NODE_ENV === "production") {
     // serves up static assests on heroku 
-    app.use(express.static("build"));
+    app.use(express.static("client/build"));
 }
 
 // use routes (API may still need. Not sure on react.) => heroku
